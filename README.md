@@ -20,7 +20,7 @@ The Privacy Policy Summarizer is a browser extension designed to provide users w
 ### Installation
 
 1. Clone the Repository:
-   git clone https://github.com/your-username/privacy-policy-summarizer.git
+   git clone https://github.com/IT21261664/privacy-policy-summarizer.git
    cd privacy-policy-summarizer
 
 2. Create a .env file in the root directory.
