@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Policy Summarizer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { padding: 20px; width: 300px; text-align: center; }
+    .section { margin-bottom: 20px; }
+    .title { font-weight: bold; font-size: 16px; margin-bottom: 5px; }
+    .content { font-size: 14px; line-height: 1.5; }
+    .score { font-size: 24px; font-weight: bold; }
+    .good { color: green; }
+    .warning { color: red; }
+    button { margin-top: 10px; padding: 10px 15px; border: none; background-color: #4CAF50; color: white; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+    .download-button { background-color: #008CBA; }
+    .download-button:hover { background-color: #007bb5; }
+    input[type="text"] { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <div class="title">Policy Summary</div>
+      <div id="policy-summary" class="content">Loading...</div>
+      <button id="download-policy-summary" class="download-button">Download Policy Summary</button>
+    </div>
+    <div class="section">
+      <div class="title">Terms Summary</div>
+      <div id="terms-summary" class="content">Loading...</div>
+      <button id="download-terms-summary" class="download-button">Download Terms Summary</button>
+    </div>
+    <div class="section">
+      <div class="title">Privacy Score</div>
+      <div id="privacy-score" class="content score">Loading...</div>
+      <div id="privacy-message" class="content">Calculating...</div>
+    </div>
+    <div class="section">
+      <div class="title">Manual Privacy Policy URL</div>
+      <input type="text" id="manual-policy-url" placeholder="Enter privacy policy URL">
+      <button id="summarize-policy-url">Summarize URL</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
